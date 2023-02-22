@@ -24,6 +24,6 @@ window.onload = (event) =>
   button = document.getElementById("enter_button");
 
   button.addEventListener('click', function(event) {
-    document.getElementById("addressText").innerHTML = contents[document.getElementById("storeLabel")];
+    document.getElementById("addressText").innerHTML = this.contents[document.getElementById("storeLabel")];
   });  
 }
