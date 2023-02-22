@@ -9,7 +9,7 @@ initSqlJs({ locateFile: filename => 'http://www.amusicalcoder.com/geLocator.gith
   xhr.onload = e => {
     const uInt8Array = new Uint8Array(xhr.response);
     const db = new SQL.Database(uInt8Array);
-    const contents = db.exec("SELECT * FROM my_table");
+    const contents = db.exec("SELECT * FROM locations");
     
   };
   xhr.send();
