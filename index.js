@@ -1,5 +1,7 @@
 window.onload = (event) => 
 {
+  var contents;
+
   initSqlJs({ locateFile: filename => 'http://www.amusicalcoder.com/geLocator.github.io/' + filename }).then(function(SQL)
   {
     const xhr = new XMLHttpRequest();
@@ -10,7 +12,7 @@ window.onload = (event) =>
     xhr.onload = e => {
       const uInt8Array = new Uint8Array(xhr.response);
       const db = new SQL.Database(uInt8Array);
-      const contents = db.exec("SELECT * FROM locations");
+      contents = db.exec("SELECT * FROM locations");
       
     };
     xhr.send();
