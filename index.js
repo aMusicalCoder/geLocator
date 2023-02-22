@@ -16,6 +16,8 @@ initSqlJs({ locateFile: filename => 'http://www.amusicalcoder.com/geLocator.gith
 
 });
 
-document.getElementById("enter_button").addEventListener("click", function() {
+button = document.getElementById("enter_button");
+
+button.addEventListener("click", function() {
   document.getElementById("addressText").innerHTML = contents[document.getElementById("storeLabel")];
 });
