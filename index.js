@@ -1,4 +1,4 @@
-document.onload = () => {
+document.onload = (event) => {
   initSqlJs({ locateFile: filename => 'http://www.amusicalcoder.com/geLocator.github.io/' + filename }).then(function(SQL)
   {
     const xhr = new XMLHttpRequest();
