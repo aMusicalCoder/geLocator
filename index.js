@@ -1,5 +1,5 @@
 
-initSqlJs({ locateFile: filename => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js` }).then(function(SQL)
+initSqlJs({ locateFile: filename => 'http://www.amusicalcoder.com/geLocator.github.io/' + filename }).then(function(SQL)
 {
   const xhr = new XMLHttpRequest();
 
