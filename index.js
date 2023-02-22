@@ -1,7 +1,7 @@
 
 const xhr = new XMLHttpRequest();
 
-xhr.open('GET', 'https://github.com/aMusicalCoder/geLocator/blob/d0f56673455da5cd475025fc1b25b876a3478ebb/ge_locations.db', true);
+xhr.open('GET', './ge_locations.db', true);
 xhr.responseType = 'arraybuffer';
 
 xhr.onload = e => {
