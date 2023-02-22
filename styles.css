@@ -1,0 +1,116 @@
+/* Reset default styling for manual control. */
+*, ::before, ::after {
+	padding:  0;
+	margin:  0;
+	/* Hide scrollbar for IE, Edge and Firefox */
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+
+  	/* Set Default Font-Size to easily use rem, em */
+  	font-size: 16px;
+  	font-family: Itim;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Declare Variables for Color Pallete */
+:root
+{
+	--cello: #1d4357;
+	--boston-blue: #2e9fb6;
+	--morning-glory: #9ccfde;
+	--cararra: #f5f5f2;
+	--lemon-grass: #929780;
+}
+
+body
+{
+	background: var(--cello);
+}
+
+header
+{
+	background: var(--boston-blue);
+	width: 100%;
+	border-radius: 0 0 33px 33px;
+}
+
+header h1 
+{
+	font-size: 4rem;
+	color: var(--cello);
+	text-align: center;
+	padding-top: 25px;
+}
+
+header h3
+{
+	font-size: 2rem;
+	color: var(--cello);
+	text-align: right;
+	margin-right: 100px;
+}
+
+#central-block
+{
+	background: var(--lemon-grass);
+	height: 25em;
+	width: 40%;
+	margin: 0 auto;
+	border-radius: 33px;
+	margin-top: 10em;
+}
+
+#central-block form 
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#central-block label 
+{
+	font-size: 2.5rem;
+	color: var(--cararra);
+	margin: 0 auto;
+	text-align: center;
+}
+
+#enter_button
+{
+	width: 100px;
+	height: 50px;
+	grid-column: 1;
+	justify-self: center;
+	color: var(--cello);
+	background-color: var(--morning-glory);
+	border-radius: 25px;
+}
+
+#storeNumText
+{
+	font-size: 2rem;
+	align-self: center;
+}
+
+#addressText
+{
+	resize: none;
+}
+
+#storeLabel
+{
+	grid-column: 1;
+}
+
+#addressLabel
+{
+	grid-column: 2;
+	grid-row: 1;
+}
