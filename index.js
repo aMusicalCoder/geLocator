@@ -24,6 +24,6 @@ window.onload = (event) =>
   button = document.getElementById("enter_button");
 
   button.addEventListener('click', function(event) {
-    document.getElementById("addressText").innerHTML = this.contents[document.getElementById("storeLabel")];
+    document.getElementById("addressText").innerHTML = this.contents[document.getElementById("storeLabel").value]; //WHERE WE LEFT OFF. understand layout of contents to get data out
   });  
 }
