@@ -29,12 +29,12 @@
 body
 {
 	background: var(--cello);
+
 }
 
 header
 {
 	background: var(--boston-blue);
-	width: 100%;
 	border-radius: 0 0 33px 33px;
 }
 
@@ -58,10 +58,10 @@ header h3
 {
 	background: var(--lemon-grass);
 	height: 25em;
-	width: 40%;
+	width: 60%;
 	margin: 0 auto;
 	border-radius: 33px;
-	margin-top: 10em;
+	margin-top: 5em;
 }
 
 #central-block form 
@@ -76,7 +76,7 @@ header h3
 
 #central-block label 
 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	color: var(--cararra);
 	margin: 0 auto;
 	text-align: center;
@@ -95,13 +95,16 @@ header h3
 
 #storeNumText
 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	align-self: center;
 }
 
 #addressText
 {
 	resize: none;
+	height: 100px;
+	width: 250px;
+	font-size: 1.75rem;
 }
 
 #storeLabel
@@ -113,4 +116,178 @@ header h3
 {
 	grid-column: 2;
 	grid-row: 1;
+	justify-self: center;
+}
+
+@media only screen and (max-width: 480px) /* Mobile Devices */
+{
+
+	#central-block
+	{
+		width: 60%;
+		margin-top: 7.5em;
+	}
+
+	#central-block form
+	{
+		grid-template-columns: 1fr;
+	}
+
+	header h1
+	{
+		font-size: 2rem;
+	}
+
+	header h3
+	{
+		font-size: 1rem;
+		margin-right: 25px;
+	}
+
+	#central-block label
+	{
+		font-size: 1.5rem;
+	}
+
+	#storeNumText
+	{
+		font-size: 1.5rem;
+	}
+
+	#addressLabel
+	{
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	#addressText
+	{
+		width: 100px;
+		font-size: 1rem;
+	}
+
+	#enter_button
+	{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		grid-row: 2;
+	}
+
+	#storeLabel
+	{
+		grid-row: 1;
+	}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) /* Tablets */
+{
+	#central-block
+	{
+		width: 60%;
+		margin-top: 7.5em;
+	}
+
+	#central-block form
+	{
+		grid-template-columns: 1fr;
+	}
+
+	header h1
+	{
+		font-size: 3rem;
+	}
+
+	header h3
+	{
+		font-size: 1.5rem;
+		margin-right: 25px;
+	}
+
+	#central-block label
+	{
+		font-size: 2rem;
+	}
+
+	#storeNumText
+	{
+		font-size: 1.5rem;
+	}
+
+	#addressLabel
+	{
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	#addressText
+	{
+		width: 100px;
+		font-size: 1.25rem;
+	}
+
+	#enter_button
+	{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		grid-row: 2;
+	}
+
+	#storeLabel
+	{
+		grid-row: 1;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) /* Small Screens */
+{
+	#central-block
+	{
+		width: 60%;
+		margin-top: 7.5em;
+	}
+
+	#central-block form
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	header h1
+	{
+		font-size: 3.5rem;
+	}
+
+	header h3
+	{
+		font-size: 2rem;
+		margin-right: 25px;
+	}
+
+	#central-block label
+	{
+		font-size: 2.5rem;
+	}
+
+	#storeNumText
+	{
+		font-size: 2rem;
+	}
+
+	#addressLabel
+	{
+		grid-column: 2;
+	}
+
+	#addressText
+	{
+		width: 250px;
+		height: 100px;
+		font-size: 1.5rem;
+	}
+
+	#enter_button
+	{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
 }
