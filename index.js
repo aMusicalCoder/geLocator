@@ -23,13 +23,12 @@ window.onload = (event) =>
       button = document.getElementById("enter_button");
 
       var getValue = (event) => {
-        event.stopPropagation();
-        event.preventDefault();
         document.getElementById("addressText").innerHTML = data.get(document.getElementById("storeNumText").value);
+        event.preventDefault();
       };
+
       button.addEventListener('click', getValue);
       button.addEventListener('touchstart', getValue);
-      button.addEventListener('touchend'. getValue);
     };
     xhr.send();
 
