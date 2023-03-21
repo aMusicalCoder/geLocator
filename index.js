@@ -22,9 +22,11 @@ window.onload = (event) =>
 
       button = document.getElementById("enter_button");
 
-      button.addEventListener('pointerdown', (event) => {
+      var getValue = (event) => {
         document.getElementById("addressText").innerHTML = data.get(document.getElementById("storeNumText").value);
-      });
+      };
+      button.addEventListener('pointerdown', getValue);
+      button.addEventListener('touchstart', getValue);
     };
     xhr.send();
 
