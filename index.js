@@ -22,7 +22,7 @@ window.onload = (event) =>
 
       button = document.getElementById("enter_button");
 
-      button.addEventListener('click', (event) => {
+      button.addEventListener('pointerdown', (event) => {
         document.getElementById("addressText").innerHTML = data.get(document.getElementById("storeNumText").value);
       });
     };
