@@ -91,6 +91,7 @@ header h3
 	color: var(--cello);
 	background-color: var(--morning-glory);
 	border-radius: 25px;
+	cursor: pointer;
 }
 
 #storeNumText
