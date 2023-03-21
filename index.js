@@ -1,7 +1,7 @@
 
 window.onload = (event) => 
 {
-  initSqlJs({ locateFile: filename => 'http://www.amusicalcoder.com/geLocator.github.io/' + filename }).then(function(SQL)
+  initSqlJs({ locateFile: filename => 'https://www.amusicalcoder.com/geLocator.github.io/' + filename }).then(function(SQL)
   {
     const xhr = new XMLHttpRequest();
 
