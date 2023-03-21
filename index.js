@@ -27,8 +27,9 @@ window.onload = (event) =>
         event.preventDefault();
         document.getElementById("addressText").innerHTML = data.get(document.getElementById("storeNumText").value);
       };
-      button.addEventListener('pointerdown', getValue);
+      button.addEventListener('click', getValue);
       button.addEventListener('touchstart', getValue);
+      button.addEventListener('touchend'. getValue);
     };
     xhr.send();
 
