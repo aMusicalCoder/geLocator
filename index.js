@@ -23,6 +23,8 @@ window.onload = (event) =>
       button = document.getElementById("enter_button");
 
       var getValue = (event) => {
+        event.stopPropagation();
+        event.preventDefault();
         document.getElementById("addressText").innerHTML = data.get(document.getElementById("storeNumText").value);
       };
       button.addEventListener('pointerdown', getValue);
