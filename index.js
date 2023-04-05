@@ -37,9 +37,12 @@ window.onload = (event) =>
 }
 
 /*
-DEBUG INFO on iOS
+DEBUG INFO
 
-"Not allowed to request resource
-XMLHttpRequest cannot load http://www.amusicalcoder.com/geLocator.github.io/ge_locations.db due to access control checks."
+4/4/2023:
+  iOS Debug via remotedebug_ios_webkit_adapter:
+    "Not allowed to request resource
+      XMLHttpRequest cannot load http://www.amusicalcoder.com/geLocator.github.io/ge_locations.db due to access control checks."
+    SOLVED, CORS policy issue. serve https only and change get request to https://... 
 
 */
