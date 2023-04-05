@@ -5,7 +5,7 @@ window.onload = (event) =>
   {
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'http://www.amusicalcoder.com/geLocator.github.io/ge_locations.db', true);
+    xhr.open('GET', 'https://www.amusicalcoder.com/geLocator.github.io/ge_locations.db', true);
     xhr.responseType = 'arraybuffer';
 
     xhr.onload = e => {
@@ -35,3 +35,11 @@ window.onload = (event) =>
   });
 
 }
+
+/*
+DEBUG INFO on iOS
+
+"Not allowed to request resource
+XMLHttpRequest cannot load http://www.amusicalcoder.com/geLocator.github.io/ge_locations.db due to access control checks."
+
+*/
